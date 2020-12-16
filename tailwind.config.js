@@ -1,18 +1,15 @@
 module.exports = {
-  prefix: '',
+  prefix: "",
   purge: {
     enabled: true,
-    content: [
-      '**/*.html',
-      '**/*.ts',
-    ]
+    content: ["**/*.html", "**/*.ts"],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
   variants: {
-    extend: {},
+    maxHeight: ["group-hover", "responsive"],
   },
   plugins: [],
 };

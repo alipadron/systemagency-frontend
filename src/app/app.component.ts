@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   host: {
-    class: 'w-full h-full block'
+    class: 'flex flex-col'
   }
 })
 export class AppComponent {
