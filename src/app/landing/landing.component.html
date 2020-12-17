@@ -2,7 +2,7 @@
   <app-video-js-player
     [options]="{
       autoplay: true,
-      controls: true,
+      controls: false,
       fluid: true,
       sources: [
         {
@@ -25,7 +25,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_b030cf72959e4f27a2bef8018ed8f166~mv2.jpg/v1/fill/w_291,h_431,al_c,q_80,usm_0.66_1.00_0.01/Nastya-Gonchar-2.webp"
-            alt="Nastya Gonchar at Miu Miu Exclusive F/W 2020"
             class="w-full h-full object-cover"
           />
         </div>
@@ -40,7 +39,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_8b80acfa36bb446ba363651858f22a0a~mv2.jpeg/v1/fill/w_295,h_431,al_c,q_80,usm_0.66_1.00_0.01/Vika%20Lulko%20Prada.webp"
-            alt="Viktoria Lulko at Prada Exclusive F/W 2020"
             class="w-full h-full object-cover"
           />
         </div>
@@ -55,7 +53,7 @@
       <app-video-js-player
         [options]="{
           autoplay: true,
-          controls: true,
+          controls: false,
           fluid: true,
           sources: [
             {
@@ -84,7 +82,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_1e3056edc0954efa92c484aaed8631ef~mv2.jpg/v1/fill/w_301,h_420,al_c,q_80,usm_0.66_1.00_0.01/Pasha%20Vogue%20feautered.webp"
-            alt="Pasha Harulia at Vogue USA"
             class="w-full h-full object-cover"
           />
         </div>
@@ -104,7 +101,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_79e6e3370b5a4cd78a89a6085129d692~mv2.jpg/v1/fill/w_360,h_420,al_c,q_80,usm_0.66_1.00_0.01/1a_%20cover%2C%20followed%20by%20video.webp"
-            alt="Cate Underwood at Johanna Ortiz x H&M Campaign"
             class="w-full h-full object-cover"
           />
         </div>
@@ -122,7 +118,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_5e61113d47784286af1b41b533730be5~mv2.jpg/v1/fill/w_373,h_480,al_c,q_80,usm_0.66_1.00_0.01/Vovk-1.webp"
-            alt="Vovk at Grazia Russia"
             class="w-full h-full object-cover"
           />
         </div>
@@ -140,7 +135,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_6564d2fdaca84b43ad3ff91157122cc9~mv2.jpg/v1/fill/w_403,h_480,al_c,q_80,usm_0.66_1.00_0.01/Rose-Valentine-3.webp"
-            alt="Rose Valentine at L'Officiel Mexico"
             class="w-full h-full object-cover"
           />
         </div>
@@ -162,7 +156,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_a9d00b8375a84f7db5411a4a7c4b855e~mv2.jpg/v1/fill/w_291,h_431,al_c,q_80,usm_0.66_1.00_0.01/6.webp"
-            alt="Nigina Sharipova at Bottega Veneta F/W 2020"
             class="w-full h-full object-cover"
           />
         </div>
@@ -177,7 +170,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_df3be6bdd3854d269e5c4823a8bedce0~mv2.jpeg/v1/fill/w_291,h_431,al_c,q_80,usm_0.66_1.00_0.01/5.webp"
-            alt="Viktoria Lulko at Valentino F/W 2020"
             class="w-full h-full object-cover"
           />
         </div>
@@ -196,7 +188,6 @@
       <div>
         <img
           src="https://static.wixstatic.com/media/f41861_5a7f4a75c69944d4891078ad031d4b30~mv2.jpg/v1/fill/w_740,h_491,al_c,q_85,usm_0.66_1.00_0.01/Sam%20for%20FENDIxHighsnobiety.webp"
-          alt="Samuel Saadoja at Fendi x Highsnobiety"
           class="w-full h-full object-cover"
         />
       </div>
@@ -205,7 +196,20 @@
         campaign.
       </p>
     </div>
-
+  </div>
+  <div>
+    <carousel
+      style="z-index: 10"
+      [autoplay]="true"
+      [loop]="true"
+      [height]="500"
+      [cellWidth]="320"
+      [images]="carouselImages"
+      [autoplayInterval]="2500"
+    >
+    </carousel>
+  </div>
+  <div class="space-y-8 max-w-screen-md mx-auto">
     <div class="flex justify-between">
       <div class="w-2/5 flex flex-col">
         <div class="text-center">
@@ -217,7 +221,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_0c9540f3f3bd48898cdc58729e01ae14~mv2.jpeg/v1/fill/w_364,h_480,al_c,q_80,usm_0.66_1.00_0.01/1.webp"
-            alt="Mong Chi Chio at GRAZIA Italia & China Cover"
             class="w-full h-full object-cover"
           />
         </div>
@@ -236,7 +239,6 @@
         <div class="flex-1">
           <img
             src="https://static.wixstatic.com/media/f41861_5552bb736f5f49869bf97204b3f48dd0~mv2.jpeg/v1/fill/w_359,h_480,al_c,q_80,usm_0.66_1.00_0.01/2.webp"
-            alt="Aivita Muze at Dior Magazine"
             class="w-full h-full object-cover"
           />
         </div>

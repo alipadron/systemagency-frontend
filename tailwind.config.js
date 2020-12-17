@@ -10,6 +10,7 @@ module.exports = {
   },
   variants: {
     maxHeight: ["group-hover", "responsive"],
+    margin: ["group-hover", "responsive"],
   },
   plugins: [],
 };

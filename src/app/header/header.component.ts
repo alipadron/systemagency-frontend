@@ -10,7 +10,7 @@ interface MainNavItem {
   templateUrl: './header.component.html',
   styles: [],
   host: {
-    class: 'block p-4 top-0 sticky h-28 bg-white z-10',
+    class: 'block p-4 top-0 sticky h-28 bg-white z-50',
   },
 })
 export class HeaderComponent implements OnInit {

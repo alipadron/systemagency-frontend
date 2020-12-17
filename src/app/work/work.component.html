@@ -1,0 +1,35 @@
+<div class="max-w-screen-xl mx-auto space-y-8">
+  <div>
+    <carousel
+      style="z-index: 10"
+      [autoplay]="true"
+      [loop]="true"
+      [height]="500"
+      [cellWidth]="320"
+      [images]="carouselImages"
+      [autoplayInterval]="2500"
+    >
+    </carousel>
+  </div>
+  <div class="flex flex-wrap -mx-2">
+    <div
+      *ngFor="let model of models; let isOdd = odd"
+      class="w-1/2 flex flex-col pb-8 px-2"
+    >
+      <div class="flex items-end flex-1" [class.flex-row-reverse]="isOdd">
+        <div class="h-full w-2/3" [ngClass]="{ 'mr-2': !isOdd, 'ml-2': isOdd }">
+          <img [src]="model.photo" class="w-full h-full object-cover" />
+        </div>
+        <div class="w-1/3 text-sm" [class.text-right]="isOdd">
+          <p class="font-medium">
+            <span class="uppercase">{{ model.firstName }}</span>
+            {{ model.lastName }}
+          </p>
+          <p *ngFor="let paragraph of model.paragraphs">
+            {{ paragraph }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
